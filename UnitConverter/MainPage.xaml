@@ -71,8 +71,7 @@
                     <RowDefinition Height="193"/>
                     <RowDefinition Height="193"/>
                     <RowDefinition Height="193"/>
-                    <RowDefinition Height="193"/>
-                    <!--<RowDefinition Height="193"/> -->
+
                 </Grid.RowDefinitions>
                 <!--Image Button Definitions-->
                 <Image Height="173" Width="173" Grid.Column="0" Grid.Row="0" Margin="0,0,0,0" Source="Images/Weight.png" Opacity="0.85" Tap="Weight_Tap" />
@@ -81,10 +80,6 @@
                 <Image Height="173" Width="173" Grid.Column="1" Grid.Row="1" Margin="0,0,0,0" Source="Images/Volume.png" Opacity="0.85" Tap="Volume_Tap" />
                 <Image Height="173" Width="173" Grid.Column="0" Grid.Row="2" Margin="0,0,0,0" Source="Images/Energy.png" Opacity="0.85" Tap="Energy_Tap" />
                 <Image Height="173" Width="173" Grid.Column="1" Grid.Row="2" Margin="0,0,0,0" Source="Images/Angle.png" Opacity="0.85" Tap="Angle_Tap" />
-                <Image Height="173" Width="173" Grid.Column="0" Grid.Row="3" Margin="0,0,0,0" Source="Images/Power.png" Opacity="0.85" Tap="Power_Tap" />
-                <Image Height="173" Width="173" Grid.Column="1" Grid.Row="3" Margin="0,0,0,0" Source="Images/Pressure.png" Opacity="0.85" Tap="Pressure_Tap" />
-                <Image Height="173" Width="173" Grid.Column="0" Grid.Row="4" Margin="0,0,0,0" Source="Images/Temperature.png" Opacity="0.85" Tap="Temperature_Tap" />
-                <Image Height="173" Width="173" Grid.Column="1" Grid.Row="4" Margin="0,0,0,0" Source="Images/Velocity.png" Opacity="0.85" Tap="Velocity_Tap" />
             </Grid>
         </ScrollViewer>
     </Grid>
