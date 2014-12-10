@@ -45,47 +45,47 @@ namespace UnitConverter
 
         private void Length_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=长度", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=length", UriKind.Relative));
         }
 
         private void Area_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=面积", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=area", UriKind.Relative));
         }
 
         private void Volume_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=体积", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=volume", UriKind.Relative));
         }
 
         private void Energy_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=能量", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=energy", UriKind.Relative));
         }
 
         private void Angle_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=角度", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=angle", UriKind.Relative));
         }
 
         private void Power_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=功率", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=power", UriKind.Relative));
         }
 
         private void Pressure_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=压力", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=pressure", UriKind.Relative));
         }
 
         private void Temperature_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=温度", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=temperature", UriKind.Relative));
         }
 
         private void Velocity_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=速度", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=velocity", UriKind.Relative));
         }
 
     }

@@ -25,7 +25,7 @@ namespace UnitConverter
 
             if (System.Diagnostics.Debugger.IsAttached)
             {
-                Application.Current.Host.Settings.EnableFrameRateCounter = true;
+                Application.Current.Host.Settings.EnableFrameRateCounter = false;
 
                 //Application.Current.Host.Settings.EnableCacheVisualization = true；
 

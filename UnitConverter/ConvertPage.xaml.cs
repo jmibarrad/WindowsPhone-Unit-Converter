@@ -74,7 +74,6 @@ namespace UnitConverter
             }
         }
 
-        private int weight;
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
             category = NavigationContext.QueryString["Category"];
@@ -88,56 +87,56 @@ namespace UnitConverter
                         currentList = Category.WeightUnits;
                         break; 
                     }
-                case "长度":
+                case "length":
                     {
                         LeftUnitPicker.ItemsSource = Category.LengthUnits.UnitItems;
                         RightUnitPicker.ItemsSource = Category.LengthUnits.UnitItems;
                         currentList = Category.LengthUnits;
                         break;
                     }
-                case "面积":
+                case "area":
                     {
                         LeftUnitPicker.ItemsSource = Category.AreaUnits.UnitItems;
                         RightUnitPicker.ItemsSource = Category.AreaUnits.UnitItems;
                         currentList = Category.AreaUnits;
                         break;
                     }
-                case "体积":
+                case "volume":
                     {
                         LeftUnitPicker.ItemsSource = Category.VolumeUnits.UnitItems;
                         RightUnitPicker.ItemsSource = Category.VolumeUnits.UnitItems;
                         currentList = Category.VolumeUnits;
                         break;
                     }
-                case "能量":
+                case "energy":
                     {
                         LeftUnitPicker.ItemsSource = Category.EnergyUnits.UnitItems;
                         RightUnitPicker.ItemsSource = Category.EnergyUnits.UnitItems;
                         currentList = Category.EnergyUnits;
                         break;
                     }
-                case "角度":
+                case "angle":
                     {
                         LeftUnitPicker.ItemsSource = Category.AngleUnits.UnitItems;
                         RightUnitPicker.ItemsSource = Category.AngleUnits.UnitItems;
                         currentList = Category.AngleUnits;
                         break;
                     }
-                case "功率":
+                case "power":
                     {
                         LeftUnitPicker.ItemsSource = Category.PowerUnits.UnitItems;
                         RightUnitPicker.ItemsSource = Category.PowerUnits.UnitItems;
                         currentList = Category.PowerUnits;
                         break;
                     }
-                case "压力":
+                case "pressure":
                     {
                         LeftUnitPicker.ItemsSource = Category.PressureUnits.UnitItems;
                         RightUnitPicker.ItemsSource = Category.PressureUnits.UnitItems;
                         currentList = Category.PressureUnits;
                         break;
                     }
-                case "温度":
+                case "temperature":
                     {
                         LeftUnitPicker.ItemsSource = Category.TemperatureUnits.UnitItems;
                         RightUnitPicker.ItemsSource = Category.TemperatureUnits.UnitItems;
@@ -152,7 +151,7 @@ namespace UnitConverter
                         currentList = Category.TemperatureUnits;
                         break;
                     }
-                case "速度":
+                case "velocity":
                     {
                         LeftUnitPicker.ItemsSource = Category.VelocityUnits.UnitItems;
                         RightUnitPicker.ItemsSource = Category.VelocityUnits.UnitItems;
@@ -170,47 +169,47 @@ namespace UnitConverter
                             LeftUnitPicker.SelectedIndex = 5;
                             break;
                         }
-                    case "长度":
+                    case "length":
                         {
                             LeftUnitPicker.SelectedIndex = 10;
                             break;
                         }
-                    case "面积":
+                    case "area":
                         {
                             LeftUnitPicker.SelectedIndex = 11;
                             break;
                         }
-                    case "体积":
+                    case "volume":
                         {
                             LeftUnitPicker.SelectedIndex = 16;
                             break;
                         }
-                    case "能量":
+                    case "energy":
                         {
                             LeftUnitPicker.SelectedIndex = 1;
                             break;
                         }
-                    case "角度":
+                    case "angle":
                         {
                             LeftUnitPicker.SelectedIndex = 4;
                             break;
                         }
-                    case "功率":
+                    case "power":
                         {
                             LeftUnitPicker.SelectedIndex = 3;
                             break;
                         }
-                    case "压力":
+                    case "pressure":
                         {
                             LeftUnitPicker.SelectedIndex = 7;
                             break;
                         }
-                    case "温度":
+                    case "temperature":
                         {
                             LeftUnitPicker.SelectedIndex = 1;
                             break;
                         }
-                    case "速度":
+                    case "velocity":
                         {
                             LeftUnitPicker.SelectedIndex = 1;
                             break;
@@ -361,7 +360,7 @@ namespace UnitConverter
 
         private void LeftMinusTextBlock_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            if (category == "温度")
+            if (category == "temperature")
             {
                 if (LeftUnitQuantity <= 0)
                 {
@@ -384,7 +383,7 @@ namespace UnitConverter
 
         private void RightMinusTextBlock_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            if(category=="温度")
+            if(category=="temperature")
             {
                 if (RightUnitQuantity <= 0)
                 {
@@ -431,9 +430,9 @@ namespace UnitConverter
                 else
                 {
                     double temp = 0;
-                    if (category == "温度")
+                    if (category == "temperature")
                     {
-                        #region 温度
+                        #region temperature
                         if (isLeftConvert)
                         {
                             switch (LeftUnit.Name_Symbol)
@@ -697,7 +696,7 @@ namespace UnitConverter
 
         private bool Warning()
         {
-            if (category == "温度" && isLeftConvert &&((LeftUnit.Name_Symbol == "摄氏度(℃)" && LeftUnitQuantity < -273.15) || 
+            if (category == "temperature" && isLeftConvert &&((LeftUnit.Name_Symbol == "摄氏度(℃)" && LeftUnitQuantity < -273.15) || 
                 (LeftUnit.Name_Symbol == "华氏度(℉)" && LeftUnitQuantity < -459.67) || (LeftUnit.Name_Symbol == "兰氏度(°R)" && LeftUnitQuantity < 0) ||
                 (LeftUnit.Name_Symbol == "列氏度(°Re)" && LeftUnitQuantity < -216.92) || (LeftUnit.Name_Symbol == "开氏度(K)" && LeftUnitQuantity < 0)))
             {
@@ -708,7 +707,7 @@ namespace UnitConverter
                 ShowRightUnit();
                 return false;
             }
-            else if(category == "温度" && isRightConvert &&((RightUnit.Name_Symbol == "摄氏度(℃)" && RightUnitQuantity < -273.15) || 
+            else if(category == "temperature" && isRightConvert &&((RightUnit.Name_Symbol == "摄氏度(℃)" && RightUnitQuantity < -273.15) || 
                     (RightUnit.Name_Symbol == "华氏度(℉)" && RightUnitQuantity < -459.67) || (RightUnit.Name_Symbol == "兰氏度(°R)" && RightUnitQuantity < 0) || 
                     (RightUnit.Name_Symbol == "列氏度(°Re)" && RightUnitQuantity < -216.92) || (RightUnit.Name_Symbol == "开氏度(K)" && RightUnitQuantity < 0)))
             {
