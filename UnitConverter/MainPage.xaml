@@ -47,7 +47,7 @@
                     
                 </Grid.RowDefinitions>
                 <!--Image Button Definitions-->
-                <Image Height="35" Width="45" Grid.Column="3" Grid.Row="0" Margin="0,0,0,0" Source="Images/1.png" Opacity="0.85" Tap="Weight_Tap" />
+                <Image Height="35" Width="45" Grid.Column="3" Grid.Row="0" Margin="0,0,0,0" Source="Images/1.png" Opacity="0.85" Tap="Language" />
                 <Image Height="35" Width="45" Grid.Column="5" Grid.Row="0" Margin="0,0,0,0" Source="Images/2.png" Opacity="0.85" Tap="Length_Tap" />
                 <Image Height="35" Width="45" Grid.Column="7" Grid.Row="0" Margin="0,0,0,0" Source="Images/3.png" Opacity="0.85" Tap="Area_Tap" />
                 <Image Height="35" Width="45" Grid.Column="9" Grid.Row="0" Margin="0,0,0,0" Source="Images/4.png" Opacity="0.85" Tap="Volume_Tap" />

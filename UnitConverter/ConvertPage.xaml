@@ -36,15 +36,14 @@
 
         <!--ContentPanel - 在此处放置其他内容-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock Height="50" HorizontalAlignment="Center" Margin="0,45,0,0" Name="TipTextBlock" Text="点击单位以切换!" VerticalAlignment="Top" Width="255" FontSize="32"/>
-            <TextBlock Height="50" HorizontalAlignment="Center" Margin="0,59,0,0" Name="MinusTipTextBlock" Text="数值大于零时点击负号输入负数" VerticalAlignment="Top" Width="432" FontSize="28" Visibility="Collapsed" TextAlignment="Center"/>
+            <TextBlock Height="50" HorizontalAlignment="Center" Margin="0,45,0,0" Name="TipTextBlock" VerticalAlignment="Top" Width="380" FontSize="32"/>
+            <TextBlock Height="50" HorizontalAlignment="Center" Margin="0,59,0,0" Name="MinusTipTextBlock" Text="Negatives allowed..." VerticalAlignment="Top" Width="432" FontSize="28" Visibility="Collapsed" TextAlignment="Center"/>
             <TextBlock FontSize="60" Height="70" HorizontalAlignment="Center" Margin="0,263,0,0" Name="EqualTextBlock" Text="=" VerticalAlignment="Top" Width="51" />
             <TextBox Height="71" Margin="12,101,0,0" Name="LeftUnitTextBox" Text="0" VerticalAlignment="Top" Width="432" HorizontalAlignment="Left" InputScope="Number" TextAlignment="Right" TextChanged="LeftUnitTextBox_TextChanged" KeyDown="LeftUnitTextBox_KeyDown" GotFocus="LeftUnitTextBox_GotFocus" LostFocus="LeftUnitTextBox_LostFocus" />
             <TextBox Height="71" Margin="12,368,0,0" Name="RightUnitTextBox" Text="0" VerticalAlignment="Top" Width="432" HorizontalAlignment="Left" InputScope="Number" TextAlignment="Right" TextChanged="RightUnitTextBox_TextChanged" KeyDown="RightUnitTextBox_KeyDown" GotFocus="RightUnitTextBox_GotFocus" LostFocus="RightUnitTextBox_LostFocus" />
             <TextBlock FontSize="60" Height="83" HorizontalAlignment="Center" Name="LeftMinusTextBlock" Margin="12,90,374,0" Text="-" VerticalAlignment="Top" Width="70" Foreground="#32FFFFFF" TextAlignment="Center" Tap="LeftMinusTextBlock_Tap" Visibility="Collapsed"/>
             <TextBlock FontSize="60" Height="83" HorizontalAlignment="Center" Name="RightMinusTextBlock" Margin="12,358,374,0" Text="-" VerticalAlignment="Top" Width="70" Foreground="#32FFFFFF" TextAlignment="Center" Tap="RightMinusTextBlock_Tap" Visibility="Collapsed"/>
             <Button Content="Exchange" Height="87" HorizontalAlignment="Center" Margin="0,520,0,0" Name="ExchangeButton" VerticalAlignment="Top" Width="173" Click="ExchangeButton_Click" />
-            <Button Content="刷新汇率" Height="87" HorizontalAlignment="Center" Margin="0,520,0,0" Name="RateRefreshButton" VerticalAlignment="Top" Width="173" Click="RateRefreshButton_Click" Visibility="Collapsed"/>
 
             <toolkit:ListPicker Height="71" HorizontalAlignment="Center" Margin="28,164,28,0" Name="LeftUnitPicker" VerticalAlignment="Top" Width="400" Background="{x:Null}" FontSize="32" BorderBrush="{x:Null}" ExpansionMode="FullScreenOnly" SelectionChanged="LeftUnitPicker_SelectionChanged">
                 <toolkit:ListPicker.FullModeItemTemplate>

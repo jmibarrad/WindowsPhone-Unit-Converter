@@ -9,11 +9,8 @@ namespace UnitConverter
         {
             InitializeComponent();
         }
-
-        public void Language(object sender, EventArgs e)
+        public void Language(object sender, System.Windows.Input.GestureEventArgs e)
         {
-
-
         }
 
         private void About_Click(object sender, EventArgs e)
@@ -70,7 +67,6 @@ namespace UnitConverter
         {
             NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=速度", UriKind.Relative));
         }
-
 
     }
 }
