@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Windows;
-using System.Windows.Media;
 using Microsoft.Phone.Controls;
-using Microsoft.Xna.Framework.GamerServices;
 
 namespace UnitConverter
 {
@@ -42,7 +40,7 @@ namespace UnitConverter
 
         private void Weight_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=重量", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ConvertPage.xaml?Category=weight", UriKind.Relative));
         }
 
         private void Length_Tap(object sender, System.Windows.Input.GestureEventArgs e)

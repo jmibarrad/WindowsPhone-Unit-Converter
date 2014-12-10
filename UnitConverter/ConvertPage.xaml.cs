@@ -15,7 +15,6 @@ namespace UnitConverter
         {
          
             InitializeComponent();
-            LangChange(MyGlobals.Total);
         }
 
         private string category = "";
@@ -37,35 +36,52 @@ namespace UnitConverter
 
         private UnitList currentList = new UnitList();
 
-        
-        public void LangChange(int type=3)
+
+        public void LangChange(string categoryParam, int type = 3)
         {
             switch (type)
             {
                 case 1:
                     TipTextBlock.Text = "Sélectionnez une unité!";
+                    switch (categoryParam)
+                    {
+                        case "weight":
+                            PageTitle.Text = String.Format("{0}", "Poids");
+                            break;                        
+                        case "length":
+                            PageTitle.Text = String.Format("{0}", "Distance");
+                            break;
+                        case  "energy":
+                            PageTitle.Text = String.Format("{0}", "énergie");
+                            break;
+                        case  "volume":
+                            PageTitle.Text = String.Format("{0}", "Tome");
+                            break;
+                    }
                     break;
                 case 2:
                     TipTextBlock.Text = "Selezionare un'Unità!";
+                    PageTitle.Text = String.Format("{0}", "");
                     break;
                 case 3:
                     TipTextBlock.Text = "Select an Unit!";
-
+                    PageTitle.Text = String.Format("{0}", "");
                     break;
                 case 4:
                     TipTextBlock.Text = "Selecione uma Unidade!";
-
+                    PageTitle.Text = String.Format("{0}", "");
                     break;
             }
         }
 
+        private int weight;
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
             category = NavigationContext.QueryString["Category"];
-            PageTitle.Text = String.Format("{0}", category);
+            LangChange(category, MyGlobals.Total);
             switch (category)
             {
-                case "重量":
+                case "weight":
                     {
                         LeftUnitPicker.ItemsSource = Category.WeightUnits.UnitItems;
                         RightUnitPicker.ItemsSource = Category.WeightUnits.UnitItems;
@@ -149,7 +165,7 @@ namespace UnitConverter
             {
                 switch (category)
                 {
-                    case "重量":
+                    case "weight":
                         {
                             LeftUnitPicker.SelectedIndex = 5;
                             break;
