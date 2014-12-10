@@ -94,11 +94,7 @@ namespace UnitConverter
             new Unit { Name_Symbol = "焦耳(J)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "Metric" },
             new Unit { Name_Symbol = "卡(cal)", SelfCoeffient = 1, StandardCoeffient = 4.185851820846, Classfication = "Metric" },
             new Unit { Name_Symbol = "千卡(kcal)", SelfCoeffient = 1, StandardCoeffient = 4185.851820846, Classfication = "Metric" },
-            new Unit { Name_Symbol = "英制马力▪时(HP▪h)", SelfCoeffient = 1, StandardCoeffient = 2684519.5392, Classfication = "Metric" },
-            new Unit { Name_Symbol = "米制马力▪时(PS▪h)", SelfCoeffient = 1, StandardCoeffient = 2647795.5, Classfication = "Metric" },
-            new Unit { Name_Symbol = "千瓦时(kW▪h)", SelfCoeffient = 1, StandardCoeffient = 3600000, Classfication = "Metric" },
-            new Unit { Name_Symbol = "英制热量单位(Btu)", SelfCoeffient = 1, StandardCoeffient = 1055.05585262, Classfication = "Metric" },
-            new Unit { Name_Symbol = "英尺▪磅(ft▪lb)", SelfCoeffient = 1, StandardCoeffient = 1.3557483731, Classfication = "Metric" },
+
         };
         public static UnitList EnergyUnits = new UnitList(0, 0, 0, energy);
         #endregion

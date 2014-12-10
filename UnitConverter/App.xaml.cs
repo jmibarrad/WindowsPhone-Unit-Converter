@@ -8,7 +8,7 @@ namespace UnitConverter
 
     public static class MyGlobals
     {
-        public static int Total = 1;
+        public static int Total = 3;
     }
     public partial class App : Application
     {
