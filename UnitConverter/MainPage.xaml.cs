@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Windows;
+using System.Windows.Media;
 using Microsoft.Phone.Controls;
+using Microsoft.Xna.Framework.GamerServices;
 
 namespace UnitConverter
 {
@@ -8,9 +11,28 @@ namespace UnitConverter
         public MainPage()
         {
             InitializeComponent();
+
         }
-        public void Language(object sender, System.Windows.Input.GestureEventArgs e)
+        public void SetFrench(object sender, System.Windows.Input.GestureEventArgs e)
         {
+            MyGlobals.Total=1;
+            MessageBox.Show("Francais le active.");
+        }
+
+        public void SetItalian(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            MyGlobals.Total = 2;
+            MessageBox.Show("Lingua Italiano abilitato.");
+        }
+        public void SetEnglish(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            MyGlobals.Total = 3;
+            MessageBox.Show("English mode on");
+        }
+        public void SetPortugues(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            MyGlobals.Total = 4;
+            MessageBox.Show("Portoghese abilitato.");
         }
 
         private void About_Click(object sender, EventArgs e)

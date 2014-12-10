@@ -7,13 +7,15 @@ using Microsoft.Phone.Controls;
 
 namespace UnitConverter
 {
+
     public partial class ConvertPage : PhoneApplicationPage
     {
+
         public ConvertPage()
         {
-           
+         
             InitializeComponent();
-            
+            LangChange(MyGlobals.Total);
         }
 
         private string category = "";
@@ -35,9 +37,8 @@ namespace UnitConverter
 
         private UnitList currentList = new UnitList();
 
-        public MainPage obj = new MainPage();
         
-        public void LangChange(int type)
+        public void LangChange(int type=3)
         {
             switch (type)
             {
@@ -45,10 +46,15 @@ namespace UnitConverter
                     TipTextBlock.Text = "Sélectionnez une unité!";
                     break;
                 case 2:
+                    TipTextBlock.Text = "Selezionare un'Unità!";
                     break;
                 case 3:
+                    TipTextBlock.Text = "Select an Unit!";
+
                     break;
                 case 4:
+                    TipTextBlock.Text = "Selecione uma Unidade!";
+
                     break;
             }
         }
