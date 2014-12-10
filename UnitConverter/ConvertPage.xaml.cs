@@ -122,15 +122,7 @@ namespace UnitConverter
                         currentList = Category.VelocityUnits;
                         break;
                     }
-                case "货币":
-                    {
-                        LeftUnitPicker.ItemsSource = Category.CurrencyUnits.UnitItems;
-                        RightUnitPicker.ItemsSource = Category.CurrencyUnits.UnitItems;
-                        currentList = Category.CurrencyUnits;
-                        ExchangeButton.Visibility = Visibility.Collapsed;
-                        RateRefreshButton.Visibility = Visibility.Visible;
-                        break;
-                    }
+               
             }
             if (isInitial)
             {
@@ -791,7 +783,6 @@ namespace UnitConverter
             RightUnitPicker.IsEnabled = true;
             LeftUnitTextBox.Text = tempQuantity;
 
-            Category.CurrencyUnits.LoadData(tempCurrency);
             WaitingBar.Visibility = Visibility.Collapsed;
 
             LeftSelectedIndex = tempLeftIndex;

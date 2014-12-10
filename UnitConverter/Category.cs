@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace UnitConverter
 {
@@ -175,8 +174,5 @@ namespace UnitConverter
         public static UnitList VelocityUnits = new UnitList(0.44704, 0, 0, velocity);
         #endregion
 
-        #region Currency
-        public static UnitList CurrencyUnits = new UnitList();
-        #endregion
     }
 }
