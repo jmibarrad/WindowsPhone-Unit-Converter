@@ -26,9 +26,33 @@
 
         <ProgressBar x:Name="WaitingBar" Width="480" Height="20" VerticalAlignment="Top" HorizontalAlignment="Center" IsIndeterminate="True" Visibility="Collapsed"/>
 
-        <StackPanel x:Name="TitlePanel" Margin="12,17,0,0">
-            <toolkit:ListPicker x:Name="LangPicker" Height="38" Margin="305,12,12,12"/>
-            <TextBlock x:Name="PageTitle" Text="Unit Converter" Margin="9.33,-7,2.61,0" TextAlignment="Center" FontSize="40" RenderTransformOrigin="0.5,0.5" Height="52.716" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <StackPanel x:Name="TitlePanel" Margin="12,17,0,10">
+            <Grid Margin="0,0,0,0" Name="LangGrid" HorizontalAlignment="Stretch" Width="480">
+                <!--Grid's Column & Row-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="45"/>
+                    <ColumnDefinition Width="130"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="45"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="45"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="45"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="45"/>
+            
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                    
+                </Grid.RowDefinitions>
+                <!--Image Button Definitions-->
+                <Image Height="35" Width="45" Grid.Column="3" Grid.Row="0" Margin="0,0,0,0" Source="Images/1.png" Opacity="0.85" Tap="Weight_Tap" />
+                <Image Height="35" Width="45" Grid.Column="5" Grid.Row="0" Margin="0,0,0,0" Source="Images/2.png" Opacity="0.85" Tap="Length_Tap" />
+                <Image Height="35" Width="45" Grid.Column="7" Grid.Row="0" Margin="0,0,0,0" Source="Images/3.png" Opacity="0.85" Tap="Area_Tap" />
+                <Image Height="35" Width="45" Grid.Column="9" Grid.Row="0" Margin="0,0,0,0" Source="Images/4.png" Opacity="0.85" Tap="Volume_Tap" />
+                </Grid>
+            <TextBlock x:Name="PageTitle" Text="Unit Converter" Margin="9.171,-7,2.769,0" TextAlignment="Center" FontSize="40" RenderTransformOrigin="0.5,0.5" Height="73.612" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <TextBlock.RenderTransform>
                     <CompositeTransform SkewX="-0.873" TranslateX="-0.731"/>
                 </TextBlock.RenderTransform>
