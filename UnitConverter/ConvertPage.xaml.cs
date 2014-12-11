@@ -57,20 +57,83 @@ namespace UnitConverter
                         case  "volume":
                             PageTitle.Text = String.Format("{0}", "Tome");
                             break;
+                        case "area":
+                            PageTitle.Text = String.Format("{0}", "Zone");
+                            break;
+                        case "angle":
+                            PageTitle.Text = String.Format("{0}", "Angle");
+                            break;
                     }
                     break;
                 case 2:
                     TipTextBlock.Text = "Selezionare un'Unità!";
-                    PageTitle.Text = String.Format("{0}", "");
-                    break;
+                    switch (categoryParam)
+                    {
+                        case "weight":
+                            PageTitle.Text = String.Format("{0}", "Di Peso");
+                            break;                        
+                        case "length":
+                            PageTitle.Text = String.Format("{0}", "Distanza");
+                            break;
+                        case  "energy":
+                            PageTitle.Text = String.Format("{0}", "Energia");
+                            break;
+                        case  "volume":
+                            PageTitle.Text = String.Format("{0}", "Capacità");
+                            break;
+                        case "area":
+                            PageTitle.Text = String.Format("{0}", "Zona");
+                            break;
+                        case "angle":
+                            PageTitle.Text = String.Format("{0}", "Angolo");
+                            break;
+                    }                    break;
                 case 3:
                     TipTextBlock.Text = "Select an Unit!";
-                    PageTitle.Text = String.Format("{0}", "");
-                    break;
+                    switch (categoryParam)
+                    {
+                        case "weight":
+                            PageTitle.Text = String.Format("{0}", "Weight");
+                            break;                        
+                        case "length":
+                            PageTitle.Text = String.Format("{0}", "Length");
+                            break;
+                        case  "energy":
+                            PageTitle.Text = String.Format("{0}", "Energy");
+                            break;
+                        case  "volume":
+                            PageTitle.Text = String.Format("{0}", "Volume");
+                            break;
+                        case "area":
+                            PageTitle.Text = String.Format("{0}", "Area");
+                            break;
+                        case "angle":
+                            PageTitle.Text = String.Format("{0}", "Angle");
+                            break;
+                    }                     break;
                 case 4:
                     TipTextBlock.Text = "Selecione uma Unidade!";
-                    PageTitle.Text = String.Format("{0}", "");
-                    break;
+                    switch (categoryParam)
+                    {
+                        case "weight":
+                            PageTitle.Text = String.Format("{0}", "Peso");
+                            break;                        
+                        case "length":
+                            PageTitle.Text = String.Format("{0}", "Comprimento");
+                            break;
+                        case  "energy":
+                            PageTitle.Text = String.Format("{0}", "Energia");
+                            break;
+                        case  "volume":
+                            PageTitle.Text = String.Format("{0}", "Capacità");
+                            break;
+                        case "area":
+                            PageTitle.Text = String.Format("{0}", "Zona");
+                            break;
+                        case "angle":
+                            PageTitle.Text = String.Format("{0}", "ângulo");
+                            break;
+                    }                     break;
             }
         }
 
@@ -176,12 +239,12 @@ namespace UnitConverter
                         }
                     case "area":
                         {
-                            LeftUnitPicker.SelectedIndex = 11;
+                            LeftUnitPicker.SelectedIndex = 4;
                             break;
                         }
                     case "volume":
                         {
-                            LeftUnitPicker.SelectedIndex = 16;
+                            LeftUnitPicker.SelectedIndex = 7;
                             break;
                         }
                     case "energy":
@@ -191,7 +254,7 @@ namespace UnitConverter
                         }
                     case "angle":
                         {
-                            LeftUnitPicker.SelectedIndex = 4;
+                            LeftUnitPicker.SelectedIndex = 1;
                             break;
                         }
                     case "power":

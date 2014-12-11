@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Media;
 using Microsoft.Phone.Controls;
 
 namespace UnitConverter
@@ -9,7 +10,6 @@ namespace UnitConverter
         public MainPage()
         {
             InitializeComponent();
-
         }
         public void SetFrench(object sender, System.Windows.Input.GestureEventArgs e)
         {

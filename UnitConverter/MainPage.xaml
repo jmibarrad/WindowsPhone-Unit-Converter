@@ -17,7 +17,7 @@
 
     <Grid x:Name="LayoutRoot">
         <Grid.Background>
-            <ImageBrush ImageSource="Images/Background.png" />
+            <ImageBrush ImageSource="Images/Background1.png" />
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="146"/>
@@ -25,9 +25,10 @@
         </Grid.RowDefinitions>
 
         <ProgressBar x:Name="WaitingBar" Width="480" Height="20" VerticalAlignment="Top" HorizontalAlignment="Center" IsIndeterminate="True" Visibility="Collapsed"/>
+      <Border Background="Black">
 
-        <StackPanel x:Name="TitlePanel" Margin="12,17,0,10">
-            <Grid Margin="0,0,0,0" Name="LangGrid" HorizontalAlignment="Stretch" Width="480">
+            <StackPanel x:Name="TitlePanel" Margin="12,17,0,10">
+                <Grid Margin="0,0,0,0" Name="LangGrid" HorizontalAlignment="Stretch" Width="480">
                 <!--Grid's Column & Row-->
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="45"/>
@@ -58,7 +59,7 @@
                 </TextBlock.RenderTransform>
             </TextBlock>
         </StackPanel>
-
+    </Border>
         <ScrollViewer Grid.Row="1" Width="480" Margin="0,19,0,0">
             <Grid Margin="0,0,0,0" Name="AppGrid" HorizontalAlignment="Stretch" Width="386">
                 <!--Grid's Column & Row-->
@@ -74,12 +75,29 @@
 
                 </Grid.RowDefinitions>
                 <!--Image Button Definitions-->
-                <Image Height="173" Width="173" Grid.Column="0" Grid.Row="0" Margin="0,0,0,0" Source="Images/Weight.png" Opacity="0.85" Tap="Weight_Tap" />
-                <Image Height="173" Width="173" Grid.Column="1" Grid.Row="0" Margin="0,0,0,0" Source="Images/Length.png" Opacity="0.85" Tap="Length_Tap" />
-                <Image Height="173" Width="173" Grid.Column="0" Grid.Row="1" Margin="0,0,0,0" Source="Images/Area.png" Opacity="0.85" Tap="Area_Tap" />
-                <Image Height="173" Width="173" Grid.Column="1" Grid.Row="1" Margin="0,0,0,0" Source="Images/Volume.png" Opacity="0.85" Tap="Volume_Tap" />
-                <Image Height="173" Width="173" Grid.Column="0" Grid.Row="2" Margin="0,0,0,0" Source="Images/Energy.png" Opacity="0.85" Tap="Energy_Tap" />
-                <Image Height="173" Width="173" Grid.Column="1" Grid.Row="2" Margin="0,0,0,0" Source="Images/Angle.png" Opacity="0.85" Tap="Angle_Tap" />
+                <Border Grid.Column="0" Grid.Row="0" BorderBrush="Yellow" BorderThickness="5" >
+                <Image Height="173" Width="173" Margin="0,0,0,0" Source="Images/weight1.png" Opacity=".85" Tap="Weight_Tap" />
+                </Border>
+                <Border Grid.Row="0" Grid.Column="1"  >
+                    <Image Height="173" Width="173" Margin="0,0,0,0" Source="Images/length1.png" Opacity="0.85" Tap="Length_Tap" />
+                </Border>
+                
+                <Border Grid.Row="1" Grid.Column="0"  >
+                <Image Height="173" Width="173" Margin="0,0,0,0" Source="Images/Area2.png" Opacity="0.85" Tap="Area_Tap" />
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="1" BorderBrush="Yellow" BorderThickness="5" >
+                <Image Height="173" Width="173" Margin="0,0,0,0" Source="Images/Volume1.png" Opacity="0.85" Tap="Volume_Tap" />
+                </Border>
+
+                <Border Grid.Row="2" Grid.Column="0" BorderBrush="Yellow" BorderThickness="5" >
+                <Image Height="173" Width="173"  Margin="0,0,0,0" Source="Images/Energy1.png" Opacity="0.85" Tap="Energy_Tap" />
+                </Border>
+
+                <Border Grid.Row="2" Grid.Column="1"   >
+                <Image Height="173" Width="173" Margin="0,0,0,0" Source="Images/Angle1.png" Opacity="0.85" Tap="Angle_Tap" />
+                </Border>
+            
             </Grid>
         </ScrollViewer>
     </Grid>

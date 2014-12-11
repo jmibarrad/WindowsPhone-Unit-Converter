@@ -5,16 +5,80 @@ namespace UnitConverter
     public class Category:UnitList
     {
 
-     #region Weight
+        private static List<Unit> weight2 = new List<Unit>();
+
+        #region weightvars
+        private static string w1;
+        private static string w2;
+        private static string w3;
+        private static string w4;
+        private static string w5;
+        private static string w6;
+        private static string w7;
+        #endregion
+
+        #region lengthvars
+        private static string l1;
+        private static string l2;
+        private static string l3;
+        private static string l4;
+        private static string l5;
+        private static string l6;
+        private static string l7;
+        private static string l8;
+        private static string l9;
+        private static string l10;
+        private static string l11;
+        #endregion
+
+        #region areavars
+        private static string a1;
+        private static string a2;
+        private static string a3;
+        private static string a4;
+        private static string a5;
+        #endregion
+
+        #region volumevars
+        private static string v1;
+        private static string v2;
+        private static string v3;
+        private static string v4;
+        private static string v5;
+        private static string v6;
+        private static string v7;
+        private static string v8;
+
+        #endregion
+
+        #region energyvars
+
+        private static string e1;
+        private static string e2;
+        private static string e3;
+        
+        #endregion
+
+        #region anglevars
+
+        private static string d;
+        private static string r;
+        #endregion
+
+        public void ChangeLanguage()
+        {
+            
+        }
+        #region Weight
         private static List<Unit> weight = new List<Unit>
         {            
-            new Unit { Name_Symbol = "千克(kg)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "克(g)", SelfCoeffient = 1000, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "毫克(mg)", SelfCoeffient = 1000000, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "吨(t)", SelfCoeffient = 1, StandardCoeffient = 1000, Classfication = "Metric" },
-            new Unit { Name_Symbol = "公担(q)", SelfCoeffient = 1, StandardCoeffient = 100, Classfication = "Metric" },
-            new Unit { Name_Symbol = "磅(lb)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "British" },
-            new Unit { Name_Symbol = "盎司(oz)", SelfCoeffient = 16, StandardCoeffient = 1, Classfication = "British" },
+            new Unit { Name_Symbol = w1+"(g)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = w2+"(kg)", SelfCoeffient = 1000, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = w3+"(mg)", SelfCoeffient = 1000000, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = w4+"(t)", SelfCoeffient = 1, StandardCoeffient = 1000, Classfication = "Metric" },
+            new Unit { Name_Symbol = w5+"(q)", SelfCoeffient = 1, StandardCoeffient = 100, Classfication = "Metric" },
+            new Unit { Name_Symbol = w6+"(lb)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "British" },
+            new Unit { Name_Symbol = w7+"(oz)", SelfCoeffient = 16, StandardCoeffient = 1, Classfication = "British" },
 
         };
         public static UnitList WeightUnits = new UnitList(0.45359237,0,0,weight);
@@ -23,43 +87,31 @@ namespace UnitConverter
         #region Length
         private static List<Unit> length = new List<Unit>
         {            
-            new Unit { Name_Symbol = "meter(m)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "千米(km)", SelfCoeffient = 1, StandardCoeffient = 1000, Classfication = "Metric" },
-            new Unit { Name_Symbol = "分米(dm)", SelfCoeffient = 10, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "厘米(cm)", SelfCoeffient = 100, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "毫米(mm)", SelfCoeffient = 1000, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "微米(μm)", SelfCoeffient = 1000000, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "海里(NM)", SelfCoeffient = 1, StandardCoeffient = 1852, Classfication = "Metric" },
-            new Unit { Name_Symbol = "英尺(ft)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "British" },
-            new Unit { Name_Symbol = "英寸(in)", SelfCoeffient = 12, StandardCoeffient = 1, Classfication = "British" },
-            new Unit { Name_Symbol = "码(yd)", SelfCoeffient = 1, StandardCoeffient = 3, Classfication = "British" },
-            new Unit { Name_Symbol = "英里(mile)", SelfCoeffient = 1, StandardCoeffient = 5280, Classfication = "British" },
-            new Unit { Name_Symbol = "英寻(fm)", SelfCoeffient = 1, StandardCoeffient = 6, Classfication = "British" },
-            new Unit { Name_Symbol = "弗隆(fur)", SelfCoeffient = 1, StandardCoeffient = 6620, Classfication = "British" },
+            new Unit { Name_Symbol = l1+"(m)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = l2+"(km)", SelfCoeffient = 1, StandardCoeffient = 1000, Classfication = "Metric" },
+            new Unit { Name_Symbol = l3+"(dm)", SelfCoeffient = 10, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = l4+"(cm)", SelfCoeffient = 100, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = l5+"(mm)", SelfCoeffient = 1000, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = l6+"(μm)", SelfCoeffient = 1000000, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = l7+"(NM)", SelfCoeffient = 1, StandardCoeffient = 1852, Classfication = "Metric" },
+            new Unit { Name_Symbol = l8+"(ft)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "British" },
+            new Unit { Name_Symbol = l9+"(in)", SelfCoeffient = 12, StandardCoeffient = 1, Classfication = "British" },
+            new Unit { Name_Symbol = l10+"(yd)", SelfCoeffient = 1, StandardCoeffient = 3, Classfication = "British" },
+            new Unit { Name_Symbol = l11+"(mile)", SelfCoeffient = 1, StandardCoeffient = 5280, Classfication = "British" },
+            
         };
         public static UnitList LengthUnits = new UnitList(0.3048, 0, 0, length);
         #endregion
-
+        
         #region Area
         private static List<Unit> area = new List<Unit>
         {            
-            new Unit { Name_Symbol = "平方米(m²)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "平方分米(dm²)", SelfCoeffient = 100, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "平方厘米(cm²)", SelfCoeffient = 10000, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "平方毫米(mm²)", SelfCoeffient = 1000000, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "平方千米(km²)", SelfCoeffient = 1, StandardCoeffient = 1000000, Classfication = "Metric" },
-            new Unit { Name_Symbol = "公顷(ha)", SelfCoeffient = 1, StandardCoeffient = 10000, Classfication = "Metric" },
-            new Unit { Name_Symbol = "公亩(are)", SelfCoeffient = 1, StandardCoeffient = 100, Classfication = "Metric" },
-            new Unit { Name_Symbol = "市顷", SelfCoeffient = 0.000015, StandardCoeffient = 500, Classfication = "Metric" },
-            new Unit { Name_Symbol = "市亩", SelfCoeffient = 0.0015, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "平方市尺", SelfCoeffient = 9, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "平方市寸", SelfCoeffient = 900, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "平方英尺(ft²)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "British" },
-            new Unit { Name_Symbol = "英亩(acre)", SelfCoeffient = 1, StandardCoeffient = 43560, Classfication = "British" },
-            new Unit { Name_Symbol = "平方英里(mi²)", SelfCoeffient = 1, StandardCoeffient = 27878400, Classfication = "British" },
-            new Unit { Name_Symbol = "平方码(yd²)", SelfCoeffient = 1, StandardCoeffient = 9, Classfication = "British" },
-            new Unit { Name_Symbol = "平方英寸(in²)", SelfCoeffient = 144, StandardCoeffient = 1, Classfication = "British" },
-            new Unit { Name_Symbol = "平方竿(rd²)", SelfCoeffient = 1, StandardCoeffient = 272.25, Classfication = "British" },
+            new Unit { Name_Symbol = a1+"(m²)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = a2+"(dm²)", SelfCoeffient = 100, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = a3+"(cm²)", SelfCoeffient = 10000, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = a4+"(mm²)", SelfCoeffient = 1000000, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = a5+"(km²)", SelfCoeffient = 1, StandardCoeffient = 1000000, Classfication = "Metric" },
+
         };
         public static UnitList AreaUnits = new UnitList(0.09290304, 0, 0, area);
         #endregion
@@ -67,23 +119,15 @@ namespace UnitConverter
         #region Volume
         private static List<Unit> volume = new List<Unit>
         {            
-            new Unit { Name_Symbol = "升(L)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "立方米(m³)", SelfCoeffient = 1, StandardCoeffient = 1000, Classfication = "Metric" },
-            new Unit { Name_Symbol = "立方厘米(cm³)", SelfCoeffient = 1000, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "立方毫米(mm³)", SelfCoeffient = 1000000, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "毫升(mL)", SelfCoeffient = 1000, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "立方英尺(ft³)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "British" },
-            new Unit { Name_Symbol = "立方英寸(in³)", SelfCoeffient = 1728, StandardCoeffient = 1, Classfication = "British" },
-            new Unit { Name_Symbol = "立方码(yd³)", SelfCoeffient = 27, StandardCoeffient = 1, Classfication = "British" },
-            new Unit { Name_Symbol = "英制品脱(imp pt)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "Imperial" },
-            new Unit { Name_Symbol = "英制夸脱(imp qt)", SelfCoeffient = 1, StandardCoeffient = 2, Classfication = "Imperial" },
-            new Unit { Name_Symbol = "英制加仑(imp gal)", SelfCoeffient = 1, StandardCoeffient = 8, Classfication = "Imperial" },
-            new Unit { Name_Symbol = "美制干量品脱(US pt)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "American" },
-            new Unit { Name_Symbol = "美制干量夸脱(US qt)", SelfCoeffient = 1, StandardCoeffient = 2, Classfication = "American" },
-            new Unit { Name_Symbol = "美制干量加仑(US gal)", SelfCoeffient = 1, StandardCoeffient = 8, Classfication = "American" },
-            new Unit { Name_Symbol = "美制湿量品脱(US pt)", SelfCoeffient = 1, StandardCoeffient = 0.859367001, Classfication = "American" },
-            new Unit { Name_Symbol = "美制湿量夸脱(US qt)", SelfCoeffient = 1, StandardCoeffient = 1.718734002, Classfication = "American" },
-            new Unit { Name_Symbol = "美制湿量加仑(US gal)", SelfCoeffient = 1, StandardCoeffient = 6.874936008, Classfication = "American" },
+            new Unit { Name_Symbol = v1+"(L)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = v2+"(m³)", SelfCoeffient = 1, StandardCoeffient = 1000, Classfication = "Metric" },
+            new Unit { Name_Symbol = v3+"(cm³)", SelfCoeffient = 1000, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = v4+"(mm³)", SelfCoeffient = 1000000, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = v5+"(mL)", SelfCoeffient = 1000, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = v6+"(US pt)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "American" },
+            new Unit { Name_Symbol = v7+"(US qt)", SelfCoeffient = 1, StandardCoeffient = 2, Classfication = "American" },
+            new Unit { Name_Symbol = v8+"(US gal)", SelfCoeffient = 1, StandardCoeffient = 8, Classfication = "American" },
+
         };
         public static UnitList VolumeUnits = new UnitList(28.3168,0.56826125,0.55061047,volume);
         #endregion
@@ -91,9 +135,9 @@ namespace UnitConverter
         #region Energy
         private static List<Unit> energy = new List<Unit>
         {            
-            new Unit { Name_Symbol = "焦耳(J)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "卡(cal)", SelfCoeffient = 1, StandardCoeffient = 4.185851820846, Classfication = "Metric" },
-            new Unit { Name_Symbol = "千卡(kcal)", SelfCoeffient = 1, StandardCoeffient = 4185.851820846, Classfication = "Metric" },
+            new Unit { Name_Symbol = e1+"(J)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = e2+"卡(cal)", SelfCoeffient = 1, StandardCoeffient = 4.185851820846, Classfication = "Metric" },
+            new Unit { Name_Symbol = e3+"千卡(kcal)", SelfCoeffient = 1, StandardCoeffient = 4185.851820846, Classfication = "Metric" },
 
         };
         public static UnitList EnergyUnits = new UnitList(0, 0, 0, energy);
@@ -102,13 +146,9 @@ namespace UnitConverter
         #region Angle
         private static List<Unit> angle = new List<Unit>
         {            
-            new Unit { Name_Symbol = "度(°)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "分(′)", SelfCoeffient = 60, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "秒(″)", SelfCoeffient = 3600, StandardCoeffient = 1, Classfication = "Metric" },
-            new Unit { Name_Symbol = "圆周(Cir)", SelfCoeffient = 1, StandardCoeffient = 360, Classfication = "Metric" },
-            new Unit { Name_Symbol = "弧度(rad)", SelfCoeffient = 1, StandardCoeffient = 57.29577944, Classfication = "Metric" },
-            new Unit { Name_Symbol = "毫弧度(mrad)", SelfCoeffient = 1, StandardCoeffient = 0.005729577944, Classfication = "Metric" },
-            new Unit { Name_Symbol = "百分度(gon)", SelfCoeffient = 1, StandardCoeffient = 0.9, Classfication = "Metric" },
+            new Unit { Name_Symbol = d+"(°)", SelfCoeffient = 1, StandardCoeffient = 1, Classfication = "Metric" },
+            new Unit { Name_Symbol = r+"(rad)", SelfCoeffient = 1, StandardCoeffient = 57.29577944, Classfication = "Metric" },
+            
         };
         public static UnitList AngleUnits = new UnitList(0.3048, 0, 0, angle);
         #endregion
