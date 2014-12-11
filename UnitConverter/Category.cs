@@ -65,10 +65,6 @@ namespace UnitConverter
         private static string r;
         #endregion
 
-        public void ChangeLanguage()
-        {
-            
-        }
         #region Weight
         private static List<Unit> weight = new List<Unit>
         {            
@@ -142,6 +138,181 @@ namespace UnitConverter
         };
         public static UnitList EnergyUnits = new UnitList(0, 0, 0, energy);
         #endregion
+
+        public void ChangeLanguage()
+        {
+            if (MyGlobals.Total == 1)
+            {
+                w1 = "";
+                w2 = "";
+                w3 = "";
+                w4 = "";
+                w5 = "";
+                w6 = "";
+                w7 = "";
+
+                a1 = "";
+                a2 = "";
+                a3 = "";
+                a5 = "";
+
+                l1 = "";
+                l2 = "";
+                l3 = "";
+                l4 = "";
+                l5 = "";
+                l6 = "";
+                l7 = "";
+                l8 = "";
+                l9 = "";
+                l10 = "";
+                l11 = "";
+
+                e1 = "";
+                e2 = "";
+                e3 = "";
+
+                v1 = "";
+                v2 = "";
+                v3 = "";
+                v4 = "";
+                v6 = "";
+                v5 = "";
+                v7 = "";
+                v8 = "";
+
+                d = "";
+                r = "";
+            }
+            else if(MyGlobals.Total==2)
+            {
+                w1 = "";
+                w2 = "";
+                w3 = "";
+                w4 = "";
+                w5 = "";
+                w6 = "";
+                w7 = "";
+
+                a1 = "";
+                a2 = "";
+                a3 = "";
+                a5 = "";
+
+                l1 = "";
+                l2 = "";
+                l3 = "";
+                l4 = "";
+                l5 = "";
+                l6 = "";
+                l7 = "";
+                l8 = "";
+                l9 = "";
+                l10 = "";
+                l11 = "";
+
+                e1 = "";
+                e2 = "";
+                e3 = "";
+
+                v1 = "";
+                v2 = "";
+                v3 = "";
+                v4 = "";
+                v6 = "";
+                v5 = "";
+                v7 = "";
+                v8 = "";
+
+                d = "";
+                r = "";
+            }else if (MyGlobals.Total==3)
+            {
+                w1 = "";
+                w2 = "";
+                w3 = "";
+                w4 = "";
+                w5 = "";
+                w6 = "";
+                w7 = "";
+
+                a1 = "";
+                a2 = "";
+                a3 = "";
+                a5 = "";
+
+                l1 = "";
+                l2 = "";
+                l3 = "";
+                l4 = "";
+                l5 = "";
+                l6 = "";
+                l7 = "";
+                l8 = "";
+                l9 = "";
+                l10 = "";
+                l11 = "";
+
+                e1 = "";
+                e2 = "";
+                e3 = "";
+
+                v1 = "";
+                v2 = "";
+                v3 = "";
+                v4 = "";
+                v6 = "";
+                v5 = "";
+                v7 = "";
+                v8 = "";
+
+                d = "";
+                r = "";
+            }
+            else
+            {
+                w1 = "";
+                w2 = "";
+                w3 = "";
+                w4 = "";
+                w5 = "";
+                w6 = "";
+                w7 = "";
+
+                a1 = "";
+                a2 = "";
+                a3 = "";
+                a5 = "";
+
+                l1 = "";
+                l2 = "";
+                l3 = "";
+                l4 = "";
+                l5 = "";
+                l6 = "";
+                l7 = "";
+                l8 = "";
+                l9 = "";
+                l10 = "";
+                l11 = "";
+
+                e1 = "";
+                e2 = "";
+                e3 = "";
+
+                v1 = "";
+                v2 = "";
+                v3 = "";
+                v4 = "";
+                v6 = "";
+                v5 = "";
+                v7 = "";
+                v8 = "";
+
+                d = "";
+                r = "";
+            }
+        }
 
         #region Angle
         private static List<Unit> angle = new List<Unit>
